@@ -113,6 +113,7 @@
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\Trigger.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\TriggerMultiCondition.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\TriggerStateType.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Exceptions\MissingEntityTemplateException.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Interface\IComponent.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentMapper.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentPoolable.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\DelayedEntitySystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Entity.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\EntityManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntityComponentProcessingSystem.cs"/>
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntityProcessingSystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntitySystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\GroupManager.cs" />
@@ -150,6 +152,7 @@
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Bag.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\IntervalTagSystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\BagEnumerator.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Extensions.cs"/>
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\FastDateTime.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Timer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
