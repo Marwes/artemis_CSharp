@@ -18,7 +18,7 @@ namespace Artemis.System
         /// Constructs the system with an aspect which processes entities which have all the specified component types.
         /// </summary>
         public EntityProcessingSystem()
-            : this(new Aspect())
+            : this(Aspect.All())
         {
         }
 
@@ -64,7 +64,7 @@ namespace Artemis.System
         /// Constructs the system with an aspect which processes entities which have all the specified component types.
         /// </summary>
         public EntityProcessingSystem()
-            : this(new Aspect())
+            : this(Aspect.All())
         {
         }
 
@@ -113,7 +113,7 @@ namespace Artemis.System
         /// Constructs the system with an aspect which processes entities which have all the specified component types.
         /// </summary>
         public EntityProcessingSystem()
-            : this(new Aspect())
+            : this(Aspect.All())
         {
         }
 
@@ -165,7 +165,7 @@ namespace Artemis.System
         /// Constructs the system with an aspect which processes entities which have all the specified component types.
         /// </summary>
         public EntityProcessingSystem()
-            : this(new Aspect())
+            : this(Aspect.All())
         {
         }
 
@@ -220,7 +220,7 @@ namespace Artemis.System
         /// Constructs the system with an aspect which processes entities which have all the specified component types.
         /// </summary>
         public EntityProcessingSystem()
-            : this(new Aspect())
+            : this(Aspect.All())
         {
         }
 
