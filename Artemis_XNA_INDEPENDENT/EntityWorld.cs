@@ -180,20 +180,33 @@ namespace Artemis
         /// <exception cref="MissingEntityTemplateException">EntityTemplate for the tag "entityTemplateTag" was not registered.</exception>
         public Entity CreateEntityFromTemplate(string entityTemplateTag, params object[] templateArgs)
         {
-            return CreateEntityWithIdFromTemplate(entityTemplateTag, null, templateArgs);
+            return createEntityFromTemplate(null, entityTemplateTag, templateArgs);
         }
 
         /// <summary>
         /// Creates a entity from template.
         /// </summary>
+        /// <param name="entityUniqueId">The entity unique id. (artemis can provide this value, use the overloaded method)</param>
         /// <param name="entityTemplateTag">The entity template tag.</param>
-        /// <param name="entityUniqueId">The entity unique id. (artemis can provide this value)</param>
         /// <param name="templateArgs">The template args.</param>
         /// <returns>
         /// The created entity.
         /// </returns>
         /// <exception cref="MissingEntityTemplateException">EntityTemplate for the tag "entityTemplateTag" was not registered.</exception>
-        public Entity CreateEntityWithIdFromTemplate(string entityTemplateTag, long? entityUniqueId, params object[] templateArgs)
+        public Entity CreateEntityFromTemplate(long entityUniqueId,string entityTemplateTag, params object[] templateArgs)
+        {
+            return createEntityFromTemplate(entityUniqueId, entityTemplateTag, templateArgs);   
+        }
+
+        /// <summary>
+        /// Creates the entity from template.
+        /// </summary>
+        /// <param name="entityUniqueId">The entity unique id.</param>
+        /// <param name="entityTemplateTag">The entity template tag.</param>
+        /// <param name="templateArgs">The template args.</param>
+        /// <returns></returns>
+        /// <exception cref="MissingEntityTemplateException"></exception>
+        private Entity createEntityFromTemplate(long? entityUniqueId, string entityTemplateTag, params object[] templateArgs)
         {
             Debug.Assert(!string.IsNullOrEmpty(entityTemplateTag), "Entity template tag must not be null or empty.");
 

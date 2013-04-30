@@ -43,10 +43,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-  <Compile Include="..\Artemis_XNA_INDEPENDENT\System\ProcessingSystem.cs" />
-  <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\FQueueManager.cs" />
-	<Compile Include="..\Artemis_XNA_INDEPENDENT\System\FQueueSystemProcessingThreadSafe.cs" />
-    <Compile Include="..\Artemis_XNA_INDEPENDENT\Aspect.cs" />
+  <Compile Include="..\Artemis_XNA_INDEPENDENT\Aspect.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\AttributesProcessor.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisComponentCreate.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisComponentPool.cs" />
@@ -65,12 +62,16 @@
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\AddedComponentHandler.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\AddedEntityHandler.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\ComponentTypeManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\FQueueManager.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\GameLoopType.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\QueueManager.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentPoolMultiThread.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\ExecutionType.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\RemovedComponentHandler.cs" />
-    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\RemovedEntityHandler.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\RemovedEntityHandler.cs" />    
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntityComponentProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\ProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\FQueueSystemProcessingThreadSafe.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\DelayedEntityProcessingSystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\DelayedEntitySystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Entity.cs" />
@@ -96,8 +97,13 @@
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Bag.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\System\IntervalTagSystem.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\BagEnumerator.cs" />
+<<<<<<< HEAD
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Extensions.cs"/>
+=======
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Extensions.cs" />
+>>>>>>> 81eec05ab52f9bffa8761a9c42cc7c12a37dfa0e
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\FastDateTime.cs" />
     <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Timer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 </Project>
